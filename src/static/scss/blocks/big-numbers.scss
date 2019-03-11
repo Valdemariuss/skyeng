@@ -1,0 +1,27 @@
+.big-numbers {
+    display: block;
+    text-align: center;
+    margin: 3em 0 0 0;
+    font-size: 20px;
+
+    &__inp, &__res {
+        display: block;
+        width: 90%;
+        margin: 0.5em auto;
+    }
+
+    &__inp {
+        padding: 0.5em;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+
+    &__sep {
+        display: block;
+    }
+
+    &__res {
+        font-weight: bold;
+        word-break: break-all;
+    }
+}

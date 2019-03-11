@@ -1,0 +1,122 @@
+.rate-list {
+    display: block;
+    margin: 3em auto;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .rate {
+        max-width: 16em;
+        margin: 1em;
+        padding: 1em 2em;
+        &:hover {
+            background-color: rgba(241,241,241,.4);
+        }
+    }
+}
+
+.rate {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 0.5em;
+    max-width: 25em;
+    line-height: 1.5;
+    transition: background-color 0.3s ease-out;
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    &__img {
+        width: auto;
+        height: 5em;
+        margin: 0 auto;
+    }
+
+    &__name, &__price {
+        color: #5572d6;
+    }
+
+    &__name {
+        display: block;
+        padding: 0;
+        margin: 1.5em 0 .5em 0;
+        font-size: 1.35em;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+    }
+
+    &__title {
+        display: block;
+        padding: 0;
+        margin: 1em 0;
+        color: #aba7a7;
+    }
+
+    &__price {
+        font-size: 2.2em;
+
+        B {
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        SUP {
+            font-size: 0.5em;
+        }
+
+        SMALL {
+            font-size: 0.4em;
+            margin: 0 0 0 .3em;
+        }
+    }
+
+    &__but {
+        display: none;
+        margin: 1.2em auto 0.5em auto;
+        padding: 0.6em 2.5em;
+        background-color: darken(#5572d6, 5%);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 0.3em;
+        transition: background-color 0.3s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken(#5572d6, 15%);
+        }
+    }
+}
+
+.modal {
+
+    .rate {
+        padding: 0 1em;
+
+        &__link {
+            cursor: default;
+            &:before {
+                display: block;
+                font-size: 1.1em;
+                font-weight: bold;
+                padding: 0;
+                margin: 0 0 1.8em 0;
+                content: "Confirmation";
+            }
+        }
+
+        &__but {
+            display: inline-block;
+        }
+    }
+}
